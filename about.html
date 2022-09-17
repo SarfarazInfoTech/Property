@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script src="./static/js/script.js"></script>
+
+    <!-- Bootstraps CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.scss"> -->
+
+    <!-- for menu bar modal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Left Side Modal Menu Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mobTop">
+        <div class="container">
+            <div class="row">
+                <div class="bg-light col-3 pe-5 me-5">
+                    <button class="bg-light color pt-2 m-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="modal_view_left" data-toggle="modal"
+                        data-target="#get_quote_modal">
+                        <h1><span class="navbar-toggler-icon"></span></h1>
+                    </button>
+                </div>
+                <div class="col-5">
+                    <img class="w-100" src="./static/images/logo.png" alt="logo">
+                </div>
+
+                <div class="col-3">
+                    <!-- white space -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Left Modal Menus -->
+    <div class="modal modal_outer left_modal fade" id="get_quote_modal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <form method="post" id="get_quote_frm">
+                <div class="modal-content ">
+                    <div class="modal-header bg-white">
+                        <div class="p-1 pb-1">
+                            <img class="w-100" src="./static/images/logo.png" alt="logo">
+                        </div>
+                        <button type="button" class="close bg-white" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <h1 class="text-muted pb-5 mb-5"><i class="bi bi-x-circle-fill"></i></h1>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!--  -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Menus List -->
+                        <div class="pb-3 leftM">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="./about.html">About</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="#">Services</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="#">Feature Planning</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="./project.html">Ongoing Projects</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="#">Teams & Condition</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="#">Privacy & Policies</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="./contact.html">Contact Us</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="#">Support</a>
+                                </li>
+                                <li class="nav-item nBar text-start">
+                                    <a class="nav-link pb-0 pt-1 p-4" href="#">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <!-- social icon and links -->
+                        <div class="pt-2">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <h1 class="ps-4">Follow on
+                                        <a class="text-primary text-decoration-none ps-3" href="#"> <i
+                                                class="bi bi-facebook pr-5"></i></a>
+                                        <a class="text-success text-decoration-none ps-3" href="#"> <i
+                                                class="bi bi-whatsapp pr-5"></i></a>
+                                        <a class="text-primary text-decoration-none ps-3" href="#"> <i
+                                                class="bi bi-instagram pr-5"></i></a>
+                                        <a class="text-danger text-decoration-none ps-3" href="#"> <i
+                                                class="bi bi-youtube pr-5"></i></a>
+                                    </h1>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- //modal-content -->
+            </form>
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+
+    <!-- Mobile Top -->
+    <!-- <div class="container-fluid mobTop">
+        <div class="row">
+            <div class="col-5 pb-1 pt-2">
+                <img class="w-100" src="./static/images/logo.png" alt="logo">
+            </div>
+            <div class="col-7">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <h1 class="ps-5 ms-4 pt-5">
+                            <a class="text-primary text-decoration-none ps-4 ms-4" href="#"> <i
+                                    class="bi bi-facebook pr-5"></i></a>
+                            <a class="text-success text-decoration-none ps-3" href="#"> <i
+                                    class="bi bi-whatsapp pr-5"></i></a>
+                            <a class="text-primary text-decoration-none ps-3" href="#"> <i
+                                    class="bi bi-instagram pr-5"></i></a>
+                            <a class="text-danger text-decoration-none ps-3" href="#"> <i
+                                    class="bi bi-youtube pr-5"></i></a>
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Header Top -->
+    <nav id="mHide" class="navbar navbar-expand-lg p-3 pt-1 pb-2 HeaderBar">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="text-light text-decoration-none p-5 m-5" href="#"> <i class="bi bi-envelope pr-5">
+                            </i>
+                            support@9squareproperties.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-light text-decoration-none p-5 m-5" href="#"> <i class="bi bi-geo-alt pr-5">
+                            </i>
+                            BN Reddy Nagar & L B Nagar, Hyderabad, Telangana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-light text-decoration-none p-3 ps-5 ms-5" href="#"> <i
+                                class="bi bi-meta pr-5"></i></a>
+                        <a class="text-light text-decoration-none p-3" href="#"> <i
+                                class="bi bi-instagram pr-5"></i></a>
+                        <a class="text-light text-decoration-none p-3" href="#"> <i class="bi bi-youtube pr-5"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NavBar Nav -->
+    <nav id="mHide" class="navbar navbar-expand-sm  justify-content-center">
+        <ul class="navbar-nav p-3 pb-0 pt-0">
+            <img src="./static/images/logo.png" alt="logo" class="me-5 pe-5" style="height: 60px;">
+            <li class="nav-item nBar">
+                <a class="nav-link pb-1 p-4 ms-5 me-5 pe-5" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item nBar">
+                <a class="nav-link active pb-1 p-4 me-5 pe-5" href="./about.html">About Nine Square</a>
+            </li>
+            <li class="nav-item nBar">
+                <a class="nav-link pb-1 p-4 me-5 pe-5" href="./project.html">Ongoing Projects</a>
+            </li>
+            <li class="nav-item nBar">
+                <a class="nav-link pb-1 p-4 me-5 pe-5" href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Title About -->
+    <section class="headImg headBefImg">
+        <div class="container">
+            <div class="text-light ps-5 ms-5">
+                <h2>About</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Image About -->
+    <div class="container pt-3 mt-3 pb-5">
+        <div class="row lg-ps-4 lg-ms-4">
+            <div class="col-lg-5 col-sm-12 pe-5 me-5">
+                <div class="card-body text-center">
+                    <h3 class="card-title text-center">Our long-standing experience</h3>
+                    <span class="text-muted">We value relationships</span>
+                    <hr>
+                    <p class="card-text justify-content-center">Our scale gives us wide-ranging specialist and local
+                        knowledge, and we take pride in
+                        providing best-in-class advice as we help individuals, businesses and institutions make
+                        better property decisions.</p>
+                    <div>
+                        <input type="button" class="btn btn-white border-primary text-primary" value="View Projects">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 pt-3">
+                <div class="card">
+                    <img src="./static/images/about.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Abouts -->
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-3 col-6 pb-4 ps-2">
+                <div class="card-body">
+                    <div class="card-body bg-secondary footer text-light">
+                        <h1 class="card-title text-center p-4"><i class="bi bi-house"></i></h1>
+                        <p class="card-text text-center">Management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 pb-4 ps-2">
+                <div class="card-body">
+                    <div class="card-body bg-secondary footer text-light">
+                        <h1 class="card-title text-center p-4"><i class="bi bi-send"></i></h1>
+                        <p class="card-text text-center">Business Ethics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 pb-4 ps-2">
+                <div class="card-body">
+                    <div class="card-body bg-secondary footer text-light">
+                        <h1 class="card-title text-center p-4"><i class="bi bi-shield-lock"></i></h1>
+                        <p class="card-text text-center">Vision & Strategy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 pb-4 ps-2">
+                <div class="card-body">
+                    <div class="card-body bg-secondary footer text-light">
+                        <h1 class="card-title text-center p-4"><i class="bi bi-lock"></i></h1>
+                        <p class="card-text text-center">Security Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Head -->
+    <div class="container-fluid bg-secondary footer text-light p-2">
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>With specialists working with us, we are able to advise the best investment opportunities</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom Desktop -->
+    <div class="container-fluid footer text-light pb-0 mb-0">
+        <div class="container">
+            <footer id="mHide" class="py-4">
+                <div id="mHide" class="row ps-4">
+                    <div class="col-lg-2 col-sm-4">
+                        <h5>Funcitions</h5>
+                        <hr>
+                        <ul class="nav flex-column text-light">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Build-up Planning</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About Nine
+                                    Projects</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Invest in your
+                                    future</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">We value
+                                    relationships</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Planning for
+                                    Features</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-4">
+                        <h5>Know more
+                            <hr>
+                        </h5>
+                        <ul class="nav flex-column text-light">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">One Flour Flats</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Open Plots</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Buy House</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Society</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">NIT's</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-4">
+                        <h5>Useful Links</h5>
+                        <hr>
+                        <ul class="nav flex-column text-light">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Projects</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4 offset-1">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of whats new and exciting from us.</p>
+                            <div class="d-flex w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between py-4 mb-0 my-4 pb-0 mb-0 border-top">
+                    <p>© Copyright 2021 | Alif It Solution | All rights reserved.</p>
+                    <div class="d-flex">
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#">
+                                    <i class="bi bi-meta pr-5 text-light" width="24" height="24"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#">
+                                    <i class="bi bi-instagram pr-5 text-light" width="24" height="24"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="link-dark" href="#">
+                                    <i class="bi bi-youtube pr-5 text-light" width="24" height="24"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- mobile footer -->
+    <div id="bMenu" class="container-fluid footer text-light pb-0 mb-0">
+        <div class="container">
+            <footer class="mobile-footer text-white">
+                <div class="text-center justify-content-between py-2">
+                    <p>&#169; Copyright 2021 Alif It Solution All rights reserved.</p>
+                </div>
+
+                <div id="bMenu" class="p-5 m-1">
+                    <!-- Blanks Spaces -->
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOR MOBILE VERSION -->
+    <nav id="bMenu" class="bMenu bg-secondary">
+        <a href="./index.html"> <i class="fas fa-home"><br><span>Home</span> </i></a>
+        <a href="./about.html"> <i class="fas fa-user"><br><span>About</span></i></a>
+        <a href="./project.html"> <i class="fas fa-briefcase"><br><span>Project</span></i></a>
+        <a href="./contact.html"> <i class="fas fa-address-book"><br><span>Contact</span></i></a>
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
